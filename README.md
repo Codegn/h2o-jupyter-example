@@ -22,8 +22,13 @@ Point your browser to http://localhost:54321
 
 ## II) Use docker-compose file to run a H2O container and a jupyter container that can connect to it.
 docker-compose up
+copy the jupyter url into your browser.
+
+you still can go to http://localhost:54321 to use h2o flow.
 
 when you are done:
 docker-compose down
 
-Note: The entrypoint in the docker-compose file for the h2o service uses -Xmx8g that set the maximum amount of memory that the java virtual machine is able to use. If this is not set then by default it uses 2gb
+Note: The entrypoint in the docker-compose file for the h2o service uses -Xmx8g that set the maximum amount of memory that the java virtual machine is able to use. If this is not set then by default it uses 2gb.
+
+The test notebook contains an AutoML example.
